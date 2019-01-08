@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+
+    <title>Segunda pagina web2</title>
+    <!-- Los elementos P con "name"=X, tendran las siguientes características-->
+    <!-- Los elementos P que empiecen por el "name^"=X, tendran las siguientes características-->
+    <!-- Los elementos P que terminen por el "name$"=X, tendran las siguientes características-->
+    <!-- Los elementos P que contengan el "name*"=X, tendran las siguientes características-->
+    <!-- nth-child(8) - cambia el octavo hermano "P"-->
+    <!-- nth-child(odd) - cambia los impares hermanos "P"-->
+    <!-- nth-child(even) - cambia los pares hermanos "P"-->
+    <!-- first-child - cambia los primeros hijos-->
+    <!-- last-child - cambia los ultimos hijos-->
+    <!-- only-child - cambia formato etiqutas hijas unicas-->
+    <style>
+
+    p[name="miselementos"]{
+        color:#935116;
+    }
+    p[name^="los"]{
+        color:#28B463;
+    }
+    p[name$="uga"]{
+        color:#8B059D;
+    }
+     p[name*="ss"]{
+        color:#D32E10;
+    }
+
+    p:nth-child(8){
+        color:#CFCF24;
+    }
+    p:last-child{
+        color:#00F;
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+<p name="miselementos">Hola</p>
+<p name="losaposentos">Adios</p>
+<p name="losamigos">Febrero</p>
+<p name="tortuga">Verde</p>
+<p name="berruga">Fea</p>
+<p name="messi">Verde</p>
+<p name="tasso">Fea</p>
+<p>Este es el octavo "P"</p>
+<p>Ultimo hijo</p>
+<ol>
+    <li><p>Limon</p></li>
+        <p>Limon</p>
+        <p>Limon</p>
+        <p>Limon</p>
+        <p>Limon</p>
+        <p>Limon</p>
+        <p>Limon</p>
+        <p>Octavo Limón</p>
+        <p>Ultimo Limon</p>
+    <li><p>Limon</p></li>
+        <p>Ultimo limon</p>
+        <p>Ultimo limon</p>
+</ol>
+
+</body>
+</html>

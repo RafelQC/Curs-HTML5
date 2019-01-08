@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS document */
+
+/*selector de etiqueta*/
+body{
+    /*cambiam colors de fons de web*/
+    background-color:#2E86C1;
+}
+
+/*seleccionam una ID mencionada a l'arxiu HTML*/
+#cabeceraweb{
+    /*cambiam colors de fons*/
+    background-color:#28B463;
+}
+
+#navegacionprincipal{
+    background-color:#DC7633;
+}
+
+#barralateral{
+    /*el caixó només ocupa el que ocupa el seu texte interior i el següent caixó ocupa l'espai restant*/
+    float:left;
+    /*donam la alura al caixó en pixels*/
+    height:1850px;
+    background-color:#D98880;
+}
+
+#contenidoprincipal{
+    background-color:#82E0AA;
+    /*posam un marge a l'esquerra en aquest cas de X pixels*/
+    margin-left:250px;
+    padding-left:20px;
+    padding-top:10px;
+}
+
+#piedepagina{
+    background-color:#CACFD2;
+    /*elimina el tractament dels floats colindants tractantlos com a caixons*/
+    clear:both;
+    margin-top:70px;
+}
+
+li{
+    background-color:#C39BD3;
+    /*passar els elemants en blocs, a elements en linea, distribuits horitzontalment y no vertical*/
+    display:inline;
+}
